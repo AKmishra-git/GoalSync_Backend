@@ -16,6 +16,10 @@ app.use(cors({
   credentials: true
 }));
 
+app.get("/", (req, res) => {
+  res.send("GoalSync Backend Running Successfully");
+});
+
 app.use('/api/auth',         authRouter);
 app.use('/api/goals',        goalRouter);
 app.use('/api/approval',     approvalRouter);
