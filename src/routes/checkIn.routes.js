@@ -4,7 +4,7 @@ import {
   addManagerComment,
   getCheckinData,
   getTeamCheckinOverview
-} from '../controllers/checkin.controller.js';
+} from '../controllers/checkIn.controller.js';
 import { protect, authorizeRoles } from '../middleware/middleware.auth.js';
 
 const router = express.Router();
